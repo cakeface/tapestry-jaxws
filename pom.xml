@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.apache.tapestry</groupId>
 	<artifactId>tapestry-jaxws</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>Tapestry JAX-WS Integration</name>
 
 	<dependencies>
@@ -80,6 +80,19 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+	<distributionManagement>
+	  <repository>
+	    <id>ifactory-releases</id>
+	    <url>
+	      http://nexus.pubfactory.com/nexus/content/repositories/releases
+	    </url>
+	  </repository>
+	  <snapshotRepository>
+	    <id>ifactory-snapshots</id>
+	    <url>
+	      http://nexus.pubfactory.com/nexus/content/repositories/snapshots
+	    </url>
+	  </snapshotRepository>
+	</distributionManagement>
 	
 </project>
